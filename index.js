@@ -20,7 +20,7 @@ var api = new ParseServer({
       {
         pfx: 'aps.p12',
         bundleId: 'net.hanovernoah.GNNHS',
-        production: false
+        production: true
       }
     ]
   },
