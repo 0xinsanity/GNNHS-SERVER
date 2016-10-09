@@ -4,8 +4,8 @@ vm: true
 env_variables:
   # --REQUIRED--
   DATABASE_URI: mongodb://localhost:27017/dev
-  APP_ID: 5LA5kojEziCljqw4vZ9iZGNRQXwaOJG0jmcQaLYY
-  MASTER_KEY: 3DerL7gs4rHTdd2eaya6GjHGpP27tbtSpyqSlGMw
+  APP_ID: <your-app-id>
+  MASTER_KEY: <your-master-key>
   # --OPTIONAL--
   # FILE_KEY: <your-file-key>
   # PARSE_MOUNT: /parse
