@@ -15,6 +15,15 @@ var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || '5LA5kojEziCljqw4vZ9iZGNRQXwaOJG0jmcQaLYY',
+  push: {
+    ios: [
+      {
+        pfx: 'aps.p12',
+        bundleId: 'net.hanovernoah.GNNHS',
+        production: true
+      }
+    ]
+  },
   masterKey: process.env.MASTER_KEY || '3DerL7gs4rHTdd2eaya6GjHGpP27tbtSpyqSlGMw', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
   liveQuery: {
