@@ -5,7 +5,9 @@ var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var path = require('path');
 
-var databaseUri = 'mongodb://admin:Cyoteam1532@ds053206.mlab.com:53206/gnnhs-server';
+var databaseUri = process.env.DATABASE_URI || process.env.MONGOLAB_URI;
+
+//var databaseUri = 'mongodb://admin:Cyoteam1532@ds053206.mlab.com:53206/gnnhs-server';
 
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
@@ -21,7 +23,7 @@ var api = new ParseServer({
         pfx: __dirname + '/aps.p12',
         passphrase: 'cyoteam1b',
         bundleId: 'net.hanovernoah.GNNHS',
-        production: true
+        production: false
       }
     ]
   },
