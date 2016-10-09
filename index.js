@@ -18,7 +18,7 @@ var api = new ParseServer({
   push: {
     ios: [
       {
-        pfx: '/aps.p12',
+        pfx: __dirname + '/aps.p12',
         passphrase: 'cyoteam1b',
         bundleId: 'net.hanovernoah.GNNHS',
         production: true
