@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "serverURL": "http://localhost:1337/parse",
+      "appId": "5LA5kojEziCljqw4vZ9iZGNRQXwaOJG0jmcQaLYY",
+      "masterKey": "3DerL7gs4rHTdd2eaya6GjHGpP27tbtSpyqSlGMw",
+      "appName": "GNNHS"
+    }
+  ]
+}
