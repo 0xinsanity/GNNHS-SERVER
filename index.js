@@ -18,7 +18,7 @@ var api = new ParseServer({
   push: {
     ios: [
       {
-        pfx: 'aps.p12',
+        pfx: '/aps.p12',
         bundleId: 'net.hanovernoah.GNNHS',
         production: true
       }
